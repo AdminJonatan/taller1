@@ -13,14 +13,17 @@ import java.util.Objects;
 @Getter
 @Setter
 @Entity
-@Table(name = "backlog")
-public class Backlog {
+@Table(name = "backlog1")
+public class Backlog extends  EntidadBase{
 
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
-    private  String projecidentifier;
+    //private  String projecidentifier;
+
+
+
 
 /*
     @JsonBackReference // para que no muestre la relacion

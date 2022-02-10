@@ -13,15 +13,13 @@ import java.util.Objects;
 @Getter
 @Setter
 @Entity
-@Table(name = "project")
-public class Project extends Backlog {
-
-
+@Table(name = "project1")
+public class Project extends  EntidadBase  {
 
     @Column(name = "NOMBRE")
     private String projecNAME;
-    @Column(name = "IDENTIFICADOR")
-    private String projecidentifier;
+   /* @Column(name = "IDENTIFICADOR")
+    private String projecidentifier;*/
     @Column(name = "DESCRIPCION")
     private String description;
     @Column(name = "FECAH_INICIO")
@@ -35,13 +33,6 @@ public class Project extends Backlog {
     @JoinColumn(name = "backlog_id")
     private Backlog backlog;
 */
-
-
-
-    @Override
-    public Long getId() {
-        return super.getId();
-    }
 
     @Override
     public boolean equals(Object o) {

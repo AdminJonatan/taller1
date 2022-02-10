@@ -13,8 +13,8 @@ import java.util.Objects;
 @Getter
 @Setter
 @Entity
-@Table(name = "projecTask")
-public class ProjecTask extends Backlog{
+@Table(name = "projecTask1")
+public class ProjecTask extends EntidadBase{
 
 
 
@@ -22,7 +22,7 @@ public class ProjecTask extends Backlog{
     private String summary;
     private String acceptanceCriteria;
     private String status;
-    private  Integer priority;
+    private Integer priority;
     private Double hours;
     private Date startDate;
     private Date endDate;
@@ -33,11 +33,6 @@ public class ProjecTask extends Backlog{
     @JoinColumn(name = "backlog_id")
     private  Backlog backlog;
 */
-
-    @Override
-    public Long getId() {
-        return super.getId();
-    }
 
     @Override
     public boolean equals(Object o) {
