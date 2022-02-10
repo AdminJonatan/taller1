@@ -14,7 +14,7 @@ import java.util.Objects;
 @Setter
 @Entity
 @Table(name = "projecTask")
-public class ProjecTask {
+public class ProjecTask extends Backlog{
 
 
 
@@ -28,16 +28,16 @@ public class ProjecTask {
     private Date endDate;
 
 
-
+/*
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "backlog_id")
     private  Backlog backlog;
+*/
 
-/*
     @Override
     public Long getId() {
         return super.getId();
-    }*/
+    }
 
     @Override
     public boolean equals(Object o) {

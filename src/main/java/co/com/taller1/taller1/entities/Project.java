@@ -14,7 +14,7 @@ import java.util.Objects;
 @Setter
 @Entity
 @Table(name = "project")
-public class Project {
+public class Project extends Backlog {
 
 
 
@@ -29,19 +29,19 @@ public class Project {
     @Column(name = "FECAH_FIN")
     private Date endDate;
 
-
+/*
     @JsonBackReference // para que no muestre la relacion
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "backlog_id")
     private Backlog backlog;
+*/
 
 
 
-
-   /* @Override
+    @Override
     public Long getId() {
         return super.getId();
-    }*/
+    }
 
     @Override
     public boolean equals(Object o) {

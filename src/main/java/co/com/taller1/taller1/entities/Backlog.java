@@ -22,7 +22,7 @@ public class Backlog {
     private  Long id;
     private  String projecidentifier;
 
-
+/*
     @JsonBackReference // para que no muestre la relacion
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "project_id")
@@ -32,7 +32,7 @@ public class Backlog {
    @OneToMany(fetch = FetchType.EAGER)
    @JoinColumn(name = "project_task_id")
    private List<ProjecTask> projecTasks;
-
+*/
 
     @Override
     public boolean equals(Object o) {
