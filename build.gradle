@@ -8,7 +8,7 @@ plugins {
 jar {
 	manifest {
 		attributes(
-				'Taller1Application': 'co.com.taller1'
+				'Taller1Application': 'java'
 		)
 	}
 }
