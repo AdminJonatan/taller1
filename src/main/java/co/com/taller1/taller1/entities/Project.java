@@ -14,7 +14,7 @@ import java.util.Objects;
 @Setter
 @Entity
 @Table(name = "project")
-public class Project extends Backlog {
+public class Project {
 
 
 
@@ -38,10 +38,10 @@ public class Project extends Backlog {
 
 
 
-    @Override
+   /* @Override
     public Long getId() {
         return super.getId();
-    }
+    }*/
 
     @Override
     public boolean equals(Object o) {
