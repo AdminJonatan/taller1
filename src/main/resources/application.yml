@@ -1,17 +1,16 @@
 server:
   port: 5000
   servlet:
-    context-path: /poli/v1
+    context-path: /v1/poli
 spring:
   datasource:
-    driver-class-name: org.postgresql.Driver
+    max-lifetime: 6000
+    driver-class-name : org.postgresql.Driver
     url: jdbc://postgresql://ec2-34-194-171-47.compute-1.amazonaws.com:5432/dfhov4hlv7npbu
+    platform: postgres
     username: eiyvedcktyvock
     password: 2f5859638d5f1b9f364d3b8dad32e1e92a7208fbf449da1aa499d39e6299c145
-    platform: postgres
   jpa:
+    generate-ddl: true
     hibernate:
       ddl-auto: create-drop
-    generate-ddl: true
-
-
