@@ -17,7 +17,7 @@ public class ProjectTaskController {
     @Autowired
     private ProjecTasckServices services;
 
-    @GetMapping
+    @GetMapping("")
     public List<ProjecTask> findAll(){
         return services.findAll();
     }

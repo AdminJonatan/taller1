@@ -16,7 +16,7 @@ public class BacklogController {
     @Autowired
     private BacklogServices services;
 
-    @GetMapping
+    @GetMapping("")
     public List<Backlog> findAll(){
 
         return services.findAll();
