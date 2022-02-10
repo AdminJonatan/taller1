@@ -13,7 +13,7 @@ import java.util.Objects;
 @Getter
 @Setter
 @Entity
-@Table(name = "Backlog")
+@Table(name = "backlog")
 public class Backlog {
 
 
@@ -28,9 +28,13 @@ public class Backlog {
     @JoinColumn(name = "project_id")
     private  Project project;
 
-    @JsonManagedReference //MANEJAR LA CONSULTA
+   /* @JsonManagedReference //MANEJAR LA CONSULTA
     @OneToMany(mappedBy = "projecTaks_id",cascade = CascadeType.PERSIST) // PERSIST PARA QUE NO ELIMINE LA RESERVA
-    private  List<Backlog> backlogs;
+    private  List<Backlog> backlogs;*/
+
+   @OneToMany(fetch = FetchType.EAGER)
+   @JoinColumn(name = "project_task_id")
+   private List<ProjecTask> projecTasks;
 
 
     @Override

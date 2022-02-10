@@ -33,7 +33,7 @@ public class Project extends Backlog {
     @JsonBackReference // para que no muestre la relacion
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "backlog_id")
-    private Backlog Backlog;
+    private Backlog backlog;
 
 
 

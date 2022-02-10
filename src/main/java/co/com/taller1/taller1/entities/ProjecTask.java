@@ -30,8 +30,9 @@ public class ProjecTask extends Backlog{
 
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "backlog_id")
-    private Backlog Backlog;
+    @JoinColumn(name = "project_task_id")
+    private  ProjecTask projecTask;
+
 
     @Override
     public Long getId() {
