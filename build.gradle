@@ -5,7 +5,14 @@ plugins {
 	
 }
 
-
+jar {
+	manifest {
+		attributes(
+				'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+				'Main-Class': 'controller.projectController'
+		)
+	}
+}
 
 
 group = 'co.com.taller1'
