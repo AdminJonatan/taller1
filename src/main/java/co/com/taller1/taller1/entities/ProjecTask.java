@@ -13,7 +13,7 @@ import java.util.Objects;
 @Getter
 @Setter
 @Entity
-@Table(name = "ProjecTask")
+@Table(name = "projecTask")
 public class ProjecTask extends Backlog{
 
 
@@ -30,8 +30,8 @@ public class ProjecTask extends Backlog{
 
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "project_task_id")
-    private  ProjecTask projecTask;
+    @JoinColumn(name = "backlog_id")
+    private  Backlog backlog;
 
 
     @Override

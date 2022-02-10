@@ -28,9 +28,6 @@ public class Backlog {
     @JoinColumn(name = "project_id")
     private  Project project;
 
-   /* @JsonManagedReference //MANEJAR LA CONSULTA
-    @OneToMany(mappedBy = "projecTaks_id",cascade = CascadeType.PERSIST) // PERSIST PARA QUE NO ELIMINE LA RESERVA
-    private  List<Backlog> backlogs;*/
 
    @OneToMany(fetch = FetchType.EAGER)
    @JoinColumn(name = "project_task_id")
