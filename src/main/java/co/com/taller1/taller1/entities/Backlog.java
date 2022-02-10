@@ -29,8 +29,8 @@ public class Backlog {
     private  Project project;
 
     @JsonManagedReference //MANEJAR LA CONSULTA
-    @OneToMany(mappedBy = "project_id",cascade = CascadeType.PERSIST) // PERSIST PARA QUE NO ELIMINE LA RESERVA
-    private  List<Backlog> Backlog;
+    @OneToMany(mappedBy = "projecTaks_id",cascade = CascadeType.PERSIST) // PERSIST PARA QUE NO ELIMINE LA RESERVA
+    private  List<Backlog> backlogs;
 
 
     @Override
