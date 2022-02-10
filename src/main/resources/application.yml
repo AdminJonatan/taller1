@@ -1,5 +1,5 @@
 server:
-  port: 9050
+  port: 5000
   servlet:
     context-path: /v1/poli
 spring:
